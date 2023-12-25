@@ -1,0 +1,416 @@
+/* html {
+  font-size: 16px;
+}
+
+body {
+  padding-top: 50px;
+  padding-left: 200px;
+}
+
+div {
+  display: inline-block;
+}
+
+#sec1 > div.skew {
+  width: 150px;
+  height: 150px;
+  background: rgb(79, 31, 192);
+  margin: 0 auto;
+  margin-bottom: 75px;
+  animation: first 3s infinite;
+  animation-direction: alternate;
+}
+
+#sec2 > div {
+  width: 150px;
+  height: 150px;
+  background: rgb(83, 82, 83);
+  margin: 0 auto;
+  margin-bottom: 75px;
+  animation: second 3s infinite;
+  animation-direction: alternate;
+}
+
+#sec3 > div {
+  width: 150px;
+  height: 150px;
+  background: rgb(184, 81, 13);
+  margin: 0 auto;
+  margin-bottom: 75px;
+  animation: third 3s infinite;
+  animation-direction: alternate;
+}
+
+#sec4 > div {
+  width: 150px;
+  height: 150px;
+  background: rgb(31, 114, 192);
+  margin: 0 auto;
+  margin-bottom: 75px;
+  animation: last 1s infinite;
+  animation-delay: 1s;
+  animation-direction: alternate;
+}
+
+@keyframes first {
+  0% {
+    transform: skewX(0deg);
+  }
+
+  50% {
+    transform: skewX(20deg);
+  }
+
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+
+@keyframes second {
+  0% {
+    transform: skew(0deg, 0deg);
+  }
+
+  50% {
+    transform: skew(20deg, 20deg);
+  }
+
+  100% {
+    transform: skew(-20deg, -20deg);
+  }
+}
+
+@keyframes third {
+  0% {
+    transform: skewY(0deg, 0deg);
+  }
+
+  50% {
+    transform: skewY(20deg);
+  }
+
+  100% {
+    transform: skewY(-20deg);
+  }
+}
+
+@keyframes last {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+html {
+  font-size: 16px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+body > main {
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-top: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+body > main .container {
+  width: 65%;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+.bar > h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.bar > nav a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.bar > nav a:hover {
+  color: #000000;
+}
+
+.parent1 {
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 48%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 0;
+  box-shadow: 0 0 5px #b3b3b3;
+}
+
+.card > figure {
+  margin: 0;
+  width: 100%;
+  min-height: 50%;
+  background: url(https://preview.colorlib.com/theme/world/img/blog-img/b3.jpg)
+    no-repeat;
+  background-size: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  background: white;
+  color: blue;
+  padding: 5px 10px;
+}
+
+.btn:hover {
+  background: blue;
+  color: white;
+}
+
+.card > article {
+  min-height: 50%;
+  padding: 0 20px;
+}
+
+.card > article > h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: -30px;
+}
+
+.card > article > p {
+  font-size: 1rem;
+  color: rgb(161, 161, 161);
+}
+
+small {
+  font-size: 0.8rem;
+  color: rgb(161, 161, 161);
+}
+
+.lable {
+  display: flex;
+  flex-wrap: wrap;
+  width: 48%;
+}
+
+.lable > div {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 23%;
+  border: 0;
+  box-shadow: 0 0 5px #b3b3b3;
+}
+
+.lable > div > img {
+  display: block;
+  height: 100%;
+}
+
+.lable > div > article > h4 {
+  font-weight: 200;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.parent2 {
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* background: red; */
+}
+
+.parent2 > .card {
+  min-height: 50vh;
+  margin-bottom: 10px;
+}
+
+.parent2 .lable {
+  flex-wrap: wrap;
+  height: 50vh;
+  justify-content: space-between;
+  /* background: orange; */
+  width: 100%;
+}
+
+.parent2 .lable aside {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 48%;
+  height: 23%;
+}
+
+.parent2 .lable div {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  border: 0;
+  box-shadow: 0 0 5px #b3b3b3;
+}
+
+.parent2 .lable div > img {
+  display: block;
+  height: 100%;
+}
+
+.parent2 .lable div > article > h4 {
+  font-weight: 200;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+body > main > aside {
+  width: 30%;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  /* background: orangered; */
+}
+
+body > main > aside h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+body > main > aside > p {
+  font-size: 1rem;
+  color: rgb(161, 161, 161);
+  padding-bottom: 50px;
+  padding-top: 15px;
+
+  padding-left: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+body > main > aside > div {
+  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-left: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+body > main > aside div .sticer {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  border: 0;
+  box-shadow: 0 0 5px #b3b3b3;
+}
+
+body > main > aside div .sticer img {
+  width: 23%;
+}
+
+body > main > aside div .sticer h4 {
+  font-weight: 200;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+body > main > aside > a {
+  margin-left: 30px;
+  padding: 10px;
+}
+
+body > main > aside i {
+  font-size: 1.5rem;
+  color: rgba(86, 86, 87, 0.6);
+  transition: color 1s;
+}
+
+body > main > aside i:hover {
+  color: rgb(47, 79, 223);
+}
+
+body > main > aside a + h2 {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
+}
+
+body > main > aside > figure {
+  margin-left: 30px;
+}
+
+body > main > aside > figure > p {
+  font-size: 1.2rem;
+}
+
+footer {
+  margin-top: 200px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+footer figure {
+  text-align: center;
+  width: 30%;
+  background: #00000073
+    url(https://preview.colorlib.com/theme/world/img/blog-img/b4.jpg) no-repeat;
+  background-size: cover;
+  padding: 30px 30px;
+  background-blend-mode: color-dodge;
+}
+
+.figure2 {
+  background: #00000073
+    url(https://preview.colorlib.com/theme/world/img/blog-img/b5.jpg) no-repeat;
+  background-size: cover;
+}
+
+.figure3 {
+  background: #00000073
+    url(https://preview.colorlib.com/theme/world/img/blog-img/b6.jpg) no-repeat;
+  background-size: cover;
+}
+
+footer figure h3 {
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.animate__delay-0_1s {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.animate__delay-0_2s {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.animate__delay-0_3s {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
